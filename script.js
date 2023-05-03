@@ -39,10 +39,14 @@ var CajaComentarios = document.getElementById("SeccionComentarios");
 }
 let Contadormg = 200;
 let boton = document.getElementById("btnMegusta");
+let MeGustaPresionado = true
 
 function Megusta(){
-  Contadormg++;
-  document.getElementById("Contadormg").innerHTML = Contadormg;
+  if (MeGustaPresionado){
+    Contadormg++;
+    document.getElementById("Contadormg").innerHTML = Contadormg;
+    MeGustaPresionado = false;
+  }
 }
 
 
